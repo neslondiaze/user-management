@@ -1,8 +1,3 @@
-# Medulo de plantila para apps NODESJS
+# Apps de manejo de bienes publicos en NODESJS
 
 ## Resumen
-git clone
-
-git init
-
-npm init
