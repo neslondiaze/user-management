@@ -2,5 +2,7 @@
 
 ## Resumen
 git clone
+
 git init
+
 npm init
