@@ -1,5 +1,5 @@
 // TODO Funcion de validaciòn
-import { passawordDTOSchema } from '#Lib/dto.type.js'
+import { passawordDTOSchema } from '#Dto/dto.type.js'
 import { Type } from '@sinclair/typebox';
 import Ajv from 'ajv';
 import addErrors from 'ajv-errors';
