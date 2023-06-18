@@ -4,7 +4,7 @@ import  express  from "express";
 const expressApp = express();
 
 // TODO MiddLemares
-expressApp.use(express.json())
+expressApp.use(express.json());
 
 
 
