@@ -1,4 +1,4 @@
-import UserModel from "../schemas/user.schema.js";
+import UserModel from "#Schemas/user.schema.js";
 import { compare } from 'bcrypt'
 
 const userUnregisterController = async (req, res) => {

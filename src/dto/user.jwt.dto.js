@@ -6,9 +6,17 @@ const userJWTDTO = async (req, res, next) => {
 
     if (!authorization) return res.status(401).send('Usuario no autorizado');
 
+    const jwt = authorization.split(' ')[1];
+
+    if (!jwt)
+        return res.status(401).send('Usuario no autorizado');
+
+
     try {
-        const encoder = new TextDecoder();
-        const { payload } = await jwtVerify(authorization, encoder.encode(process.env.JWT_PRIVATE_KEY));
+        const encoder = new TextEncoder();
+        const { payload } = await jwtVerify(
+            jwt,
+            encoder.encode(process.env.JWT_PRIVATE_KEY));
 
         req.id = payload.id
 

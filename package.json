@@ -38,7 +38,7 @@
     },
     "imports": {
         "#Config/*": "./src/config/*",
-        "#Constrants/*": "./src/constants/*",
+        "#Constants/*": "./src/constants/*",
         "#Controllers/*": "./src/controllers/*",
         "#Dto/*": "./src/dto/*",
         "#Lib/*": "./src/lib/*",

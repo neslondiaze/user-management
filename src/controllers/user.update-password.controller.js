@@ -1,11 +1,9 @@
-import { SALT } from "../constants/salt.js";
+import { SALT } from "#Constants/salt.js";
 import UserModel from '#Schemas/user.schema.js'
 import { compare, hash } from "bcrypt";
 
-
-
 const userUpdatePasswordController = async (req, res) => {
-    const { id } = res;
+    const { id } = req;
     const { oldPassword, newPassword } = req.body;
 
     const existingUserById = await UserModel.findById(id).exec();
@@ -22,7 +20,6 @@ const userUpdatePasswordController = async (req, res) => {
     await existingUserById.save();
 
     return res.send('Contraseña del usuario actualizada')
-
-}
+};
 
 export default userUpdatePasswordController;
